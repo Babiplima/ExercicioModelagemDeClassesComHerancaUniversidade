@@ -66,9 +66,16 @@ public class Funcionarios {
         this.salario = salario;
     }
 
+    //Método aumentar salário
+
+    public void aumentarSal(){
+        double novoSalario = (0.1*salario+salario);
+        this.salario=novoSalario;
+    }
+
     //Método toString
 
-    @Override
+
     public String toString() {
         StringBuilder retorno = new StringBuilder();
         retorno.append( "Nome "+ nome);

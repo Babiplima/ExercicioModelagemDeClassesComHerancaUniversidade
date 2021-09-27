@@ -65,7 +65,7 @@ public class Professores extends Funcionarios {
     StringBuilder retorno = new StringBuilder();
         retorno.append("Nome "+ getNome());
         retorno.append("CPF " + getCPF());
-        retorno.append("Número de registro "+ getnRegistro();
+        retorno.append("Número de registro "+ getnRegistro());
         retorno.append("Orgão de lotacão " + getOrgaoLotacao());
         retorno.append("Salário " + getSalario());
         retorno.append("Nível de gradução " + nivelGraduacao);

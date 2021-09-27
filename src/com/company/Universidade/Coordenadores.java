@@ -1,10 +1,13 @@
 package com.company.Universidade;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Coordenadores extends Funcionarios {
-}
+
 //Atributos
 
-    private String professoresSupervisionados;
+    private List<Professores> professoresSupervisionados = new ArrayList<>();
 
 //Método construtores
 
@@ -14,15 +17,18 @@ public class Coordenadores extends Funcionarios {
 
     public Coordenadores(String nome, int CPF, int nRegistro, String orgaoLotacao, double salario, String professoresSupervisionados) {
         super(nome, CPF, nRegistro, orgaoLotacao, salario);
-        this.professoresSupervisionados = professoresSupervisionados;
     }
 
-    public String getProfessoresSupervisionados() {
-        return professoresSupervisionados;
-    }
 
-    public void setProfessoresSupervisionados(String professoresSupervisionados) {
-        this.professoresSupervisionados = professoresSupervisionados;
+    public void adicionarProfessoresSupervisionados(Professores professor){
+        professoresSupervisionados.add(professor);
+    }
+    //Método aumentar salário
+
+
+    public void aumentarSalario() {
+        double novoSalario = (0.05 * getSalario() + getSalario());
+        setSalario(novoSalario);
     }
 
     //Método toString

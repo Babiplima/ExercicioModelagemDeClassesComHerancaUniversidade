@@ -1,6 +1,6 @@
 package com.company.Universidade;
 
-public class FuncionariosAdministrativo extends Funcionarios{
+public class FuncionariosAdministrativo extends Funcionarios {
 
     //Atributos
 
@@ -9,7 +9,7 @@ public class FuncionariosAdministrativo extends Funcionarios{
 
     //Métodos Construtores
 
-    public FuncionariosAdministrativo(){
+    public FuncionariosAdministrativo() {
 
     }
 
@@ -53,5 +53,8 @@ public class FuncionariosAdministrativo extends Funcionarios{
         retorno.append("Número de registro " + getnRegistro());
         retorno.append("Orgão de lotacão " + getOrgaoLotacao());
         retorno.append("Salário " + getSalario());
+        retorno.append("Função Admiministrativa " + FuncaoAdminitrativa);
+        retorno.append("Senioridade" + Senioridade);
         return retorno.toString();
+    }
 }
