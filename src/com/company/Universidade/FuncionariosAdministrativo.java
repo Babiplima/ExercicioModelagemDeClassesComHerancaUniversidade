@@ -18,7 +18,7 @@ public class FuncionariosAdministrativo extends Funcionarios {
         Senioridade = senioridade;
     }
 
-    public FuncionariosAdministrativo(String nome, int CPF, int nRegistro, String orgaoLotacao, double salario, String funcaoAdminitrativa, String senioridade) {
+    public FuncionariosAdministrativo(String nome, String CPF, int nRegistro, String orgaoLotacao, double salario, String funcaoAdminitrativa, String senioridade) {
         super(nome, CPF, nRegistro, orgaoLotacao, salario);
         FuncaoAdminitrativa = funcaoAdminitrativa;
         Senioridade = senioridade;

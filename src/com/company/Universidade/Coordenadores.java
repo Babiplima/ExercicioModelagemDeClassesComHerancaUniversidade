@@ -15,7 +15,7 @@ public class Coordenadores extends Funcionarios {
 
     }
 
-    public Coordenadores(String nome, int CPF, int nRegistro, String orgaoLotacao, double salario, String professoresSupervisionados) {
+    public Coordenadores(String nome, String CPF, int nRegistro, String orgaoLotacao, double salario, String professoresSupervisionados) {
         super(nome, CPF, nRegistro, orgaoLotacao, salario);
     }
 
@@ -30,6 +30,8 @@ public class Coordenadores extends Funcionarios {
         double novoSalario = (0.05 * getSalario() + getSalario());
         setSalario(novoSalario);
     }
+
+    //Método Adiciona Professor
 
     //Método toString
 

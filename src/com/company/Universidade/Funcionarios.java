@@ -5,7 +5,7 @@ public class Funcionarios {
     //Atributos
 
     private String nome;
-    private int CPF;
+    private String CPF;
     private int nRegistro;
     private String orgaoLotacao;
     private double salario;
@@ -16,7 +16,7 @@ public class Funcionarios {
 
     }
 
-    public Funcionarios(String nome, int CPF, int nRegistro, String orgaoLotacao, double salario) {
+    public Funcionarios(String nome, String CPF, int nRegistro, String orgaoLotacao, double salario) {
         this.nome = nome;
         this.CPF = CPF;
         this.nRegistro = nRegistro;
@@ -34,11 +34,11 @@ public class Funcionarios {
         this.nome = nome;
     }
 
-    public int getCPF() {
+    public String getCPF() {
         return CPF;
     }
 
-    public void setCPF(int CPF) {
+    public void setCPF(String CPF) {
         this.CPF = CPF;
     }
 

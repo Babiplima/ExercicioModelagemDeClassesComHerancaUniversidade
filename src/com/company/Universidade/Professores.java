@@ -15,7 +15,7 @@ public class Professores extends Funcionarios {
 
     }
 
-    public Professores(String nome, int CPF, int nRegistro, String orgaoLotacao, double salario, String nivelGraduacao, String disciplinaMinistrada, int quantidadeDeAluno, int quantidadeDeTurmas) {
+    public Professores(String nome, String CPF, int nRegistro, String orgaoLotacao, double salario, String nivelGraduacao, String disciplinaMinistrada, int quantidadeDeAluno, int quantidadeDeTurmas) {
         super(nome, CPF, nRegistro, orgaoLotacao, salario);
         this.nivelGraduacao = nivelGraduacao;
         this.disciplinaMinistrada = disciplinaMinistrada;
@@ -56,6 +56,8 @@ public class Professores extends Funcionarios {
     public void setQuantidadeDeTurmas(int quantidadeDeTurmas) {
         this.quantidadeDeTurmas = quantidadeDeTurmas;
     }
+
+    //Método adicionar turma para professores
 
     //Método ToString
 
