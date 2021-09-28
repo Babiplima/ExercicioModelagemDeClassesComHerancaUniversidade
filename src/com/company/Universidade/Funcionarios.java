@@ -1,6 +1,6 @@
 package com.company.Universidade;
 
-public class Funcionarios {
+public abstract class Funcionarios {
 
     //Atributos
 
@@ -8,7 +8,7 @@ public class Funcionarios {
     private String CPF;
     private int nRegistro;
     private String orgaoLotacao;
-    private double salario;
+    private double salario = 10000;
 
     //Métodos construtores
 
@@ -76,14 +76,14 @@ public class Funcionarios {
     //Método toString
 
 
+    @Override
     public String toString() {
         StringBuilder retorno = new StringBuilder();
-        retorno.append( "Nome "+ nome);
-        retorno.append("CPF " + CPF);
-        retorno.append("Número de registro "+ nRegistro);
-        retorno.append("Orgão de lotacão " + orgaoLotacao);
-        retorno.append( "Salário " + salario);
+       retorno.append("\n Nome" + nome);
+       retorno.append("\n CPF"+CPF);
+       retorno.append("\n Número de registro "+ nRegistro);
+       retorno.append("\n Orgão de lotação: "+orgaoLotacao);
+       retorno.append("\n Salário"+salario);
         return retorno.toString();
     }
-
 }

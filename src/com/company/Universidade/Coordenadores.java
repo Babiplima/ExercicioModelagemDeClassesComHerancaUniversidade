@@ -8,6 +8,8 @@ public class Coordenadores extends Funcionarios {
 //Atributos
 
     private List<Professores> professoresSupervisionados = new ArrayList<>();
+    private double salario = 10000;
+
 
 //Método construtores
 
@@ -20,14 +22,13 @@ public class Coordenadores extends Funcionarios {
     }
 
 
-    public void adicionarProfessoresSupervisionados(Professores professor){
+    public void adicionarProfessoresSupervisionados(Professores professor) {
         professoresSupervisionados.add(professor);
     }
     //Método aumentar salário
-
-
-    public void aumentarSalario() {
-        double novoSalario = (0.05 * getSalario() + getSalario());
+    @Override
+    public void aumentarSal() {
+    double novoSalario = (0.05 * getSalario() + getSalario());
         setSalario(novoSalario);
     }
 
@@ -38,12 +39,12 @@ public class Coordenadores extends Funcionarios {
     @Override
     public String toString() {
         StringBuilder retorno = new StringBuilder();
-        retorno.append("Nome " + getNome());
-        retorno.append("CPF " + getCPF());
-        retorno.append("Número de registro " + getnRegistro());
-        retorno.append("Orgão de lotacão " + getOrgaoLotacao());
-        retorno.append("Salário " + getSalario());
-        retorno.append("Professores supervisionados " + professoresSupervisionados);
+        retorno.append("\n Nome " + getNome());
+        retorno.append("\n CPF " + getCPF());
+        retorno.append("\n Número de registro " + getnRegistro());
+        retorno.append("\n Orgão de lotacão " + getOrgaoLotacao());
+        retorno.append("\n Salário " + getSalario());
+        retorno.append("\n Professores supervisionados " + professoresSupervisionados);
         return retorno.toString();
     }
 }

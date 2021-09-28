@@ -8,6 +8,7 @@ public class Professores extends Funcionarios {
     private String disciplinaMinistrada;
     private int quantidadeDeAluno;
     private int quantidadeDeTurmas;
+    private double salario=10000;
 
     //Métodos construtores
 
@@ -51,13 +52,22 @@ public class Professores extends Funcionarios {
 
     public int getQuantidadeDeTurmas() {
         return quantidadeDeTurmas;
+            }
+
+    //Método aumentar salário
+
+    @Override
+    public void aumentarSal(){
+        double novoSalario = (0.1*salario+salario);
+        this.salario=novoSalario;
     }
+
+    //Método adicionar turma para professores
 
     public void setQuantidadeDeTurmas(int quantidadeDeTurmas) {
         this.quantidadeDeTurmas = quantidadeDeTurmas;
     }
 
-    //Método adicionar turma para professores
 
     //Método ToString
 
@@ -65,15 +75,15 @@ public class Professores extends Funcionarios {
 
     public String toString() {
     StringBuilder retorno = new StringBuilder();
-        retorno.append("Nome "+ getNome());
-        retorno.append("CPF " + getCPF());
-        retorno.append("Número de registro "+ getnRegistro());
-        retorno.append("Orgão de lotacão " + getOrgaoLotacao());
-        retorno.append("Salário " + getSalario());
-        retorno.append("Nível de gradução " + nivelGraduacao);
-        retorno.append("Disciplina ministrada " + disciplinaMinistrada);
-        retorno.append("Quantidade de Alunos "+ quantidadeDeAluno);
-        retorno.append("Quantidade de Turmas "+ quantidadeDeTurmas);
+        retorno.append("\n Nome "+ getNome());
+        retorno.append("\n CPF " + getCPF());
+        retorno.append("\n Número de registro "+ getnRegistro());
+        retorno.append("\n Orgão de lotacão " + getOrgaoLotacao());
+        retorno.append("\n Salário " + getSalario());
+        retorno.append("\n Nível de gradução " + nivelGraduacao);
+        retorno.append("\n Disciplina ministrada " + disciplinaMinistrada);
+        retorno.append("\n Quantidade de Alunos "+ quantidadeDeAluno);
+        retorno.append("\n Quantidade de Turmas "+ quantidadeDeTurmas);
         return retorno.toString();
    }
 }
